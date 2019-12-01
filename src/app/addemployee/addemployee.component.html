@@ -1,0 +1,22 @@
+
+<form (ngSubmit)="Insert()">
+    <legend>Add Employee</legend>
+
+    <div class="form-group">
+        <label for="name">name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="name" [(ngModel)]="emp.name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">email</label>
+        <input type="text" class="form-control" id="email" name="email" placeholder="email" [(ngModel)]="emp.email">
+    </div>
+
+    <div class="form-group">
+        <label for="age">age</label>
+        <input type="text" class="form-control" id="age" name="age" placeholder="age" [(ngModel)]="emp.age">
+    </div>
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

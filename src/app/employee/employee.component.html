@@ -1,0 +1,25 @@
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let emps of emp">
+        <tr>
+            <td>{{emps.id}}</td>
+            <td>{{emps.name}}</td>
+            <td>{{emps.email}}</td>
+            <td>{{emps.age}}</td>
+            <td><a routerLink="/edit/{{emps.id}}">Edit</a></td>
+            <td><a routerLink="/delete/{{emps.id}}">Delete</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<a class="btn btn-info" routerLink="/addemployee" role="button">Add Employee</a>
+
+
+
