@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  url = "http://192.168.0.104:9898/emp"
+  url = "http://172.18.4.115:9898/emp"
   constructor(private http: HttpClient) { }
 
   Select(){
