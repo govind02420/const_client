@@ -1,5 +1,5 @@
 
-<form (ngSubmit)="Insert()">
+<form #myForm="ngForm" (ngSubmit)="Insert(myForm)">
     <legend>Add Employee</legend>
 
     <div class="form-group">

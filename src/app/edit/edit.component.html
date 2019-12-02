@@ -1,5 +1,5 @@
 
-<form (ngSubmit)="Update()">
+<form #myForm="ngForm" (ngSubmit)="Update(myForm)">
     <legend>Edit Employee</legend>
 
     <div class="form-group">

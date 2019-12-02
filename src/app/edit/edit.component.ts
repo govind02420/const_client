@@ -33,7 +33,7 @@ export class EditComponent implements OnInit {
     })
   }
 
-  Update(){
+  Update(from){
     console.log(this.emp);
     let observableResult = this.service.Update(this.emp);
     observableResult.subscribe((result)=>{

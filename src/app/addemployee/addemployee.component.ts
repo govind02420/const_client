@@ -23,7 +23,7 @@ export class AddemployeeComponent implements OnInit {
     
   }
 
-  Insert(){
+  Insert(form){
     console.log(this.emp);
     let observableResult = this.service.Insert(this.emp);
     observableResult.subscribe((result)=>{
